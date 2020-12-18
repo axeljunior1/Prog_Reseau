@@ -14,7 +14,7 @@ public class Client {
 			Socket s = new Socket("127.0.0.1", 1500);
 			PrintWriter out = new PrintWriter(s.getOutputStream(), true);
 			new ListeningThread(s).start();
-			System.out.println("Connexion réussie!");
+			System.out.println("*********************Connexion réussie!******************************\n---------------------------------------------------------------------------");
 			String message="";
 			while (message!="quit") {
 				message=sc.nextLine();
